@@ -15,3 +15,14 @@ const reverseString = (str: string) => {
 console.log(reverseString("typescript"));
 
 // PROBLEM 3
+type StringOrNumber = string | number;
+const checkType = (val : StringOrNumber) => {
+    if (typeof val === "string") {
+        return "String";
+    } else if (typeof val === "number") {
+        return "Number";
+    } else {
+        return "Unknown";
+    }
+}
+console.log(checkType(42));
