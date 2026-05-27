@@ -33,3 +33,19 @@ const getProperty = <X>(obj: X, key: keyof X) => {
 };
 const user = { id: 1, name: "John Doe", age: 21 };
 console.log(getProperty(user, "age"));
+
+// PROBLEM 05
+interface Book {
+    title : string;
+    author : string;
+    publishedYear : number;
+}
+
+const toggleReadStatus = <Book>(bookInfo : Book) => {
+    return {
+        ...bookInfo,
+        isRead: true
+    };
+}
+const myBook = { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024 };
+console.log(toggleReadStatus(myBook));
