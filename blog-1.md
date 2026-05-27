@@ -1,10 +1,11 @@
-# Pick & Omit are Much More then Just Utilities.
+# Pick & Omit are Much More than Just Utilities.
 
 ## How do Pick and Omit utility types prevent code duplication while creating specialized "slices" of a master interface? Discuss how this keeps your code DRY (Don't Repeat Yourself).
 
+### Introduction
 Pick and Omit are two of the important utility types in TypeScript. These two types play a crucial role in ensuring there is no need to write duplicate code snippet.
 
-In traditional JavaScript, if there was needed to create an object with simialar properties to another existing object, a completely new object had to be written from scratch. This resulted in messy unnecessery repeated code.
+In traditional JavaScript, if there was needed to create an object with similar properties to another existing object, a completely new object had to be written from scratch. This resulted in messy unnecessary repeated code.
 
 ```typescript
 const Product = {
@@ -38,4 +39,5 @@ type ProductSummary = Pick<Product, "id" | "name" | "price">;
 type ProductWithoutStock = Omit<Product, "stock" | "color">;
 ```
 
+### Conclusion
 These approaches significantly reduces LOC (Lines of code) by skipping repeated code snippets and reuses the already created main interface.

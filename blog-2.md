@@ -2,6 +2,7 @@
 
 ## How do Generics allow you to build reusable components and functions that stay strictly typed regardless of the data structures passed in?
 
+### Introduction
 Generics refers to dynamically generalize something. In typescript Generics generalizes a function or a component that can be used with different types and data structures. It works as a placeholder and functions as a reusable component that serves similar functions with different types.
 
 The following code examples breifly explains the importance of generics in terms of resusability:
@@ -81,4 +82,5 @@ const result1 = addStudentInfo(student1);
 const result2 = addStudentInfo(student2);
 ```
 
+### Conclusion
 So Generics significantly reduced repetitive code blocks by dynamically generalizing components and functions regardless of the data structures passed in.
