@@ -1,4 +1,6 @@
-# How do Pick and Omit utility types prevent code duplication while creating specialized "slices" of a master interface? Discuss how this keeps your code DRY (Don't Repeat Yourself).
+# Pick & Omit are Much More then Just Utilities.
+
+## How do Pick and Omit utility types prevent code duplication while creating specialized "slices" of a master interface? Discuss how this keeps your code DRY (Don't Repeat Yourself).
 
 Pick and Omit are two of the important utility types in TypeScript. These two types play a crucial role in ensuring there is no need to write duplicate code snippet.
 
