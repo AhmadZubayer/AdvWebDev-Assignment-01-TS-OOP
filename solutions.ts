@@ -26,3 +26,10 @@ const checkType = (val : StringOrNumber) => {
     }
 }
 console.log(checkType(42));
+
+// PROBLEM 4
+const getProperty = <X>(obj: X, key: keyof X) => {
+  return obj[key];
+};
+const user = { id: 1, name: "John Doe", age: 21 };
+console.log(getProperty(user, "age"));
